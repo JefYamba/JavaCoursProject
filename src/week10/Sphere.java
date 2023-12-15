@@ -1,4 +1,4 @@
-package week9;
+package week10;
 
 public class Sphere extends Shape3D{ // This class is an Ellipsoïd not a sphere
 
