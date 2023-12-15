@@ -16,4 +16,9 @@ public abstract class Student {
     float computeBaseScore(){
         return (mid * 0.4f) + (fin * 0.6f);
     }
+
+    @Override
+    public String toString() {
+        return "Student : " + id +" [ mid-term : " + mid + " | final-term : " + fin + " ]";
+    }
 }
