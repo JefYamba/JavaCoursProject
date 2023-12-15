@@ -12,5 +12,8 @@ public abstract class Student {
     }
 
     abstract float computeTotalScore();
-    abstract float computeBaseScore();
+
+    float computeBaseScore(){
+        return (mid * 0.4f) + (fin * 0.6f);
+    }
 }
