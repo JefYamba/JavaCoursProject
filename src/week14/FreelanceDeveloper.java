@@ -1,12 +1,16 @@
 package week14;
 
-public class FreelanceDeveloper extends Developer implements BonusSalaryBehavior{
+public class FreelanceDeveloper extends Developer implements BonusSalaryBehavior {
     int unitPrice;
     int hours;
 
     public FreelanceDeveloper(int id, String fullName, int hours) {
         super(id, fullName);
         this.hours = hours;
+    }
+
+    public void setUnitPrice(int amount){
+        this.unitPrice = amount;
     }
 
     @Override
