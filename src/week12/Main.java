@@ -2,6 +2,7 @@ package week12;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class Main {
 
@@ -37,6 +38,46 @@ public class Main {
 
         }
     }
+
+    /*
+    static void switchPairs(List<String> stringList) {
+        ListIterator<String> iterator = stringList.listIterator();
+        while (iterator.hasNext()) {
+            int i = iterator.nextIndex();
+            if (i % 2 == 0 && i + 1 < stringList.size()) {
+                String temp = stringList.get(i + 1);
+                stringList.set(i + 1, iterator.next());
+                iterator.set(temp);
+            } else {
+                iterator.next();
+            }
+        }
+    }
+
+    static void removeBadPairs(List<Integer> integerList) {
+        if (integerList.size() % 2 != 0) {
+            integerList.removeLast();
+        }
+
+        ListIterator<Integer> iterator = integerList.listIterator();
+        while (iterator.hasNext()) {
+            int i = iterator.nextIndex();
+            if (i + 1 < integerList.size()) {
+                int first = iterator.next();
+                int second = iterator.next();
+                if (first > second) {
+                    iterator.remove();
+                    iterator.previous();
+                    iterator.remove();
+                } else {
+                    iterator.previous();
+                }
+            } else {
+                iterator.next();
+            }
+        }
+    }
+    */
 
     // this methode is just for printing lists of strings in order to reduce
     // the amount of code in the main method
